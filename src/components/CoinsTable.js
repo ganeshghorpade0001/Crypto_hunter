@@ -21,6 +21,7 @@ import { CoinList } from "../config/api";
 import { useHistory } from "react-router-dom";
 import { CryptoState } from "../CryptoContext";
 
+//regex.
 export function numberWithCommas(x) {
   return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 }
@@ -81,9 +82,10 @@ export default function CoinsTable() {
   const handleSearch = () => {
     return coins.filter(
       (coin) =>
-        coin.name.toLowerCase().includes(search) ||
-        coin.symbol.toLowerCase().includes(search)
-    );
+        coin.name.toLowerCase().includes(search) 
+    
+    
+     );
   };
 
   return (

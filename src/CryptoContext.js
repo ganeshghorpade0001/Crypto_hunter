@@ -9,8 +9,8 @@ const CryptoContext = ({ children }) => {
   useEffect(() => {                                 // on every render useEffect funtion will be called and inr and usd will be updated.
     if (currency === "INR") setSymbol("₹");
     else if (currency === "USD") setSymbol("$");
-    else if (currency === "EUR") setSymbol("€");                      
-    else if (currency === "JPY") setSymbol("¥");
+    // else if (currency === "EUR") setSymbol("€");                      
+    // else if (currency === "JPY") setSymbol("¥");
      // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [currency]);
 
